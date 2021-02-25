@@ -150,7 +150,7 @@ h2{font-family: 'Libre Baskerville','Noto Sans KR','Dotum','돋움',sans-serif; 
 
 /* main_bottom */
 .main_bottom{width: 100%;}
-.playBtn{width: 100%;}
+.playBtn{width: 100%; overflow: hidden;}
 
 
 .playBtn .img{width: 100%; transition: all .3s; background: url(../img/main_play.jpg) center no-repeat; height:640px; background-size: contain; }
@@ -216,7 +216,7 @@ h2{font-family: 'Libre Baskerville','Noto Sans KR','Dotum','돋움',sans-serif; 
 	
 }
 @media screen and (max-width:1050px) {
-    .cate_wrap .cate_right .category .gnb>li{width: 100px; font-size: 16px}
+	.cate_wrap .cate_right .category .gnb>li{width: 100px; font-size: 16px}
 	.banner_visual .swiper-slide p{display: none;}
 	.banner_visual .swiper-wrapper div:nth-child(1){background:url(../img/201005_pc_main1_1.jpg) no-repeat -850px center; }
 	.banner_visual .swiper-wrapper div:nth-child(2){background:url(../img/PC_MAIN_BN_0921_2.jpg) no-repeat  -850px center; }
@@ -225,6 +225,7 @@ h2{font-family: 'Libre Baskerville','Noto Sans KR','Dotum','돋움',sans-serif; 
 	.banner_visual .swiper-wrapper div:nth-child(5) {background:url(../img/main_banner02.jpg)  no-repeat -850px center; }
 	.banner_visual .swiper-wrapper div:nth-child(6) {background:url(../img/main_banner03.jpg)  no-repeat -850px center; }
 	.banner_visual .swiper-wrapper div:nth-child(7) {background:url(../img/main_banner04.jpg)  no-repeat -850px center; }
+	.playBtn .img{height: 340px;}
 	
 	#footer{display: block; }
 	#footer .f_left, #footer .f_center, #footer .f_right{width: 400px; margin: 0 auto; margin-bottom: 30px; text-align: center; }
@@ -256,8 +257,8 @@ h2{font-family: 'Libre Baskerville','Noto Sans KR','Dotum','돋움',sans-serif; 
 }
 
 @media screen and (max-width:455px) {
-	.top_banner_box{font-size: 15px; height: 30px; line-height: 30px}
-	.top_banner_box .join_btn{font-size: 10px; padding: 5px 11px 5px 15px}
+	.top_banner_box{font-size: 12px; height: 30px; line-height: 30px}
+	.top_banner_box .join_btn{font-size: 10px; padding: 5px 11px 5px 15px; vertical-align: bottom;}
     .tnb>ul>li:nth-child(1), .tnb>ul>li:nth-child(2), .tnb>ul>li:nth-child(3), .tnb>ul>li:nth-child(4){display: none;}
 	.tnb ul li:last-child{display: block; position: absolute; right: 5px;}
 	.tnb>ul>li:nth-child(5){position: absolute; left: 5px}
@@ -266,13 +267,13 @@ h2{font-family: 'Libre Baskerville','Noto Sans KR','Dotum','돋움',sans-serif; 
 	.cate_wrap .cate_logo .logo_txt{display: none;}
 	.tnb ul li a{font-size: 13px}
 	
-	.banner_visual .swiper-wrapper div:nth-child(1){background:url(../img/201005_pc_main1_2.jpg) no-repeat center 30px; background-size: 100%}
-	.banner_visual .swiper-wrapper div:nth-child(2){background:url(../img/PC_MAIN_BN_0921_2_2.jpg) no-repeat center 30px; background-size: 100%}
-	.banner_visual .swiper-wrapper div:nth-child(3) {background:url(../img/PC_MAIN_allure_2.jpg)  no-repeat center 30px; background-size: 100%}
-	.banner_visual .swiper-wrapper div:nth-child(4) {background:url(../img/PC_MAIN_BN_2.jpg)   no-repeat center 30px; background-size: 100%}
-	.banner_visual .swiper-wrapper div:nth-child(5) {background:url(../img/main_banner02_2.jpg)  no-repeat center 30px; background-size: 100%}
-	.banner_visual .swiper-wrapper div:nth-child(6) {background:url(../img/main_banner03_2.jpg)  no-repeat center 30px; background-size: 100%}
-	.banner_visual .swiper-wrapper div:nth-child(7) {background:url(../img/main_banner04_2.jpg)  no-repeat center 30px; background-size: 100%}
+	.banner_visual .swiper-wrapper div:nth-child(1){background:url(../img/201005_pc_main1_2.jpg) no-repeat center 30px; }
+	.banner_visual .swiper-wrapper div:nth-child(2){background:url(../img/PC_MAIN_BN_0921_2_2.jpg) no-repeat center 30px; }
+	.banner_visual .swiper-wrapper div:nth-child(3) {background:url(../img/PC_MAIN_allure_2.jpg)  no-repeat center 30px; }
+	.banner_visual .swiper-wrapper div:nth-child(4) {background:url(../img/PC_MAIN_BN_2.jpg)   no-repeat center 30px; }
+	.banner_visual .swiper-wrapper div:nth-child(5) {background:url(../img/main_banner02_2.jpg)  no-repeat center 30px; }
+	.banner_visual .swiper-wrapper div:nth-child(6) {background:url(../img/main_banner03_2.jpg)  no-repeat center 30px; }
+	.banner_visual .swiper-wrapper div:nth-child(7) {background:url(../img/main_banner04_2.jpg)  no-repeat center 30px; }
 
 	.swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{top:188px}
 	.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{margin: 0 5px;}
@@ -280,13 +281,17 @@ h2{font-family: 'Libre Baskerville','Noto Sans KR','Dotum','돋움',sans-serif; 
 	.cate_wrap .cate_right .category .gnb>li:nth-child(4),.cate_wrap .cate_right .category .gnb>li:nth-child(6){display: none;}
 	.cate_wrap .cate_right .category .gnb{top: 188px;}
 	.cate_wrap .cate_right .category .gnb > li{width: 25%; font-size: .9em}
-	.cate_wrap .cate_right .category .gnb > li > a{line-height: 55px; font-size: .9em}
+	.cate_wrap .cate_right .category .gnb > li > a{line-height: 39px; font-size: .9em}
 	.box_open.open_02 > ul{width: 22%}
-	.main_list_box{max-width:210px; width: 100%}
-	.swiper-container2 .slide_txt{display: block}
+	.main_list_box{max-width:210px; width: 100%; height: 297px;}
+	.swiper-container2 .slide_txt{display: block; bottom: 70px;}
 	.swiper-container{height: 218px}
 	h2{margin-top: 75px; margin-bottom: 10px; font-size: 20px}
+	.playBtn .img{height: 230px; background-size: cover;}
+	.best_seller_wrap{height: 590px;}
 	.best_seller_wrap li{display: none;}
+	.dr_seed_wrap .main_list_box{height: 210px; }
+	.main_list_box .swiper-container3 .swiper-wrapper .swiper-slide{height: 210px;}
 	.swiper-container2 .slide_txt{font-size:11px; width: 100%}
 	.swiper-container2 .slide_txt2{width: 100%;}
 	.sns_list{position: relative; right: 20px; bottom:60px; z-index: 99999999;}
